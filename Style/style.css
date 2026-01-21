@@ -4,6 +4,9 @@
     font-weight: 400;
     font-style: normal;
 }
+img {
+  max-width: 100%;
+}
 
 #wave {
     background: linear-gradient(90deg, #22d3ee, #a855f7, #ec4899);
@@ -11,13 +14,15 @@
     color: transparent;
     font-size: 2.25rem;
 }
-.wave1{
+
+.wave1 {
     background: linear-gradient(90deg, #22d3ee, #a855f7, #ec4899);
     background-clip: text;
     color: transparent;
     font-size: 2.5rem;
 }
-body{
+
+body {
     background-color: #1A0B2E;
 }
 
@@ -67,23 +72,19 @@ body{
     background-size: cover;
     margin: 0 auto;
     background-repeat: no-repeat;
+    justify-content: center;
+    display: flex;
 }
 
 .banner-mid {
+    background-image: url(../Images/hero-circle.png);
+    height: 300px;
+    width: 300px;
+    background-size: contain;
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translate(0px, 60px);
-
-
-}
-
-.banner-mid2 {
-    position: absolute;
-    top: 28%;
-    left: 46.5%;
-
-
+ transform: translate(0px, 60px);
 }
 
 /* about section ....................................... */
@@ -136,7 +137,7 @@ body{
     color: white;
 }
 
-.ifrem{
+.ifrem {
     display: flex;
     /* display: grid;
     grid-template-columns: repeat(3, 1fr); */
@@ -149,6 +150,7 @@ body{
     align-items: center;
     justify-content: center;
 }
+
 .ifrem-video {
     background-color: #250D44;
     /* padding: 20px; */
@@ -161,16 +163,18 @@ body{
     line-height: 24px;
 
 }
-iframe{
+
+iframe {
     width: 100%;
     border-radius: 10px;
 }
-.ifrem-contant{
-   padding: 20px; 
+
+.ifrem-contant {
+    padding: 20px;
 }
 
 /* host Section */
-.bio{
+.bio {
     background-color: #230E3D;
     margin: 0 auto;
     border-radius: 15px;
@@ -184,7 +188,7 @@ iframe{
 
 }
 
-.bio-p1{
+.bio-p1 {
     color: white;
     line-height: 24px;
     font-weight: 200;
@@ -192,7 +196,7 @@ iframe{
     padding-bottom: 16px;
 }
 
-footer{
+footer {
     background-image: url(../Images/hero-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -200,6 +204,7 @@ footer{
     width: 100%;
     height: 412px;
 }
+
 /* media screen */
 
 
@@ -221,22 +226,26 @@ footer{
     .card-section {
         padding: 20px;
     }
-    .ifrem{
+
+    .ifrem {
         flex-direction: column;
-         gap: 15px;
-         justify-items: center;
-         margin:0 auto;
-         padding-left:50px;
+        gap: 15px;
+        justify-items: center;
+        margin: 0 auto;
+        padding-left: 50px;
 
     }
-    .bio{
+
+    .bio {
         flex-direction: column;
         margin-top: 60px;
     }
-    footer{
-        width:100%;
+
+    footer {
+        width: 100%;
     }
-    .social-footer{
+
+    .social-footer {
         display: grid;
         /* grid-template-columns: repeat(2, 1fr); */
     }
@@ -249,7 +258,7 @@ footer{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
     }
-    
+
 }
 
 @media screen and (min-width:576px) and (max-width:992px) {
@@ -268,11 +277,12 @@ footer{
         grid-template-columns: repeat(2, 1fr);
 
     }
-    .ifrem{
-         grid-template-columns: repeat(2, 1fr);
-         gap: 15px;
-         justify-items: center;
-         margin: auto;
+
+    .ifrem {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        justify-items: center;
+        margin: auto;
 
     }
 }
