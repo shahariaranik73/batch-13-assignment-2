@@ -162,7 +162,23 @@ iframe{
 .ifrem-contant{
    padding: 20px; 
 }
+
+/* host Section */
+.bio{
+    background-color: #230E3D;
+    margin: 0 auto;
+    border-radius: 24px;
+
+}
+
+.bio-p1{
+    color: white;
+    line-height: 24px;
+    font-weight: 200;
+}
+
 /* media screen */
+
 
 
 @media screen and (max-width:576px) {
