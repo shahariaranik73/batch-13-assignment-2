@@ -8,6 +8,19 @@ img {
   max-width: 100%;
 }
 
+@keyframes roetion2{
+    0%{
+
+    }
+    50%{
+        left: 200px;
+        top: 150px;
+    }
+    100%{
+
+    }
+}
+
 #wave {
     background: linear-gradient(90deg, #22d3ee, #a855f7, #ec4899);
     background-clip: text;
@@ -80,11 +93,15 @@ body {
     background-image: url(../Images/hero-circle.png);
     height: 300px;
     width: 300px;
+    background-repeat: no-repeat;
     background-size: contain;
     display: flex;
     justify-content: center;
     align-items: center;
  transform: translate(0px, 60px);
+}
+.banner-mid2{
+    animation: namroetion2 4s ease-in-out 0 infinite alternate;
 }
 
 /* about section ....................................... */
